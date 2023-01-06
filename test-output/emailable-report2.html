@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}#summary {margin-top:30px}h1 {font-size:30px}body {width:100%;}th,td {padding: 8px}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold;color:#0D1EB6;}.easy-overview {margin-left: auto; margin-right: auto;} .easy-test-overview tr:first-child {background-color:#D3D3D3}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<center><h1>TestNG Customized Report - Thu Jan 05 13:42:09 EET 2023</h1></center>
+<div class="easy-test-overview">
+<table class="table-bordered easy-overview">
+<tr><th>Test</th><th># No</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Included Groups</th><th>Excluded Groups</th><th># Browser</th><th># Start Time</th><th># End Time</th><th># Total<br/>Time(hh:mm:ss)</th></tr>
+<tr><th colspan="11">Amazon Task</th></tr>
+<tr><td><a href="#t0">test01</a></td><td class="num">1</td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td></td><td></td><td class="num">chrome</td><td class="num">01:41:05 PM</td><td class="num">01:42:06 PM</td><td class="num">00:01:00</td></tr>
+<tr class="stripe"><td><a href="#t1">test02</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td></td><td></td><td class="num">chrome</td><td class="num">01:41:05 PM</td><td class="num">01:42:09 PM</td><td class="num">00:01:03</td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">1</th><th class="num">0</th><th class="num attn">1</th><th colspan="5"></th><th class="num">00:02:04</th></tr>
+</table>
+</div>
+<div class="easy-test-summary"><table class="table-bordered" id='summary'><thead><tr><th>Class</th><th>Method</th><th>Short Exception</th><th>Screenshot</th><th>Start Time</th><th>End Time</th></tr></thead><tbody><tr><th colspan="6">Amazon Task</th></tr></tbody><tbody id="t0"><tr><th colspan="6">test01 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">clarusway.tests.AmazonDeneme</td><td><a href="#m0">test</a></td><td rowspan=""></td><td rowspan=""></td><td rowspan="">01:41:13 PM</td><td rowspan="">01:42:04 PM</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="6">test02 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">clarusway.tests.AmazonDeneme</td><td><a href="#m1">tearDown</a></td><td rowspan="">java.lang.NullPointerException</td><td rowspan=""></td><td rowspan="">01:42:09 PM</td><td rowspan="">01:42:09 PM</td></tr><tr><th colspan="6">test02 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">clarusway.tests.AmazonDeneme</td><td><a href="#m2">test</a></td><td rowspan="">org.openqa.selenium.NoSuchElementException: Unable to locate element: Listenizi Görüntüleyin</td><td rowspan=""></td><td rowspan="">01:41:20 PM</td><td rowspan="">01:42:09 PM</td></tr></tbody>
+</table>
+</div>
+<h2>test01</h2><h3 id="m0">clarusway.tests.AmazonDeneme#test</h3><table class="table-bordered result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>MSI</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>test02</h2><h3 id="m1">clarusway.tests.AmazonDeneme#tearDown</h3><table class="table-bordered result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=test status=FAILURE method=AmazonDeneme.test(java.lang.String)[pri:0, instance:clarusway.tests.AmazonDeneme@24fcf36f] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at clarusway.utilities.BaseTestReport.tearDown(BaseTestReport.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">clarusway.tests.AmazonDeneme#test</h3><table class="table-bordered result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>MSI</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: Listenizi Görüntüleyin
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-KL4S1RB&apos;, ip: &apos;192.168.1.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7a750464-bb4b-457f-9bd6-548d52030d8f, findElement {using=link text, value=Listenizi Görüntüleyin}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.1, moz:accessibilityChecks: false, moz:buildID: 20221215175817, moz:debuggerAddress: 127.0.0.1:65446, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16120, moz:profile: C:\Users\hp\AppData\Local\T..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:65446/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a750464-bb4b-457f-9bd6-548d52030d8f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at clarusway.tests.AmazonDeneme.test(AmazonDeneme.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
